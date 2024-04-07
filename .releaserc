@@ -1,0 +1,59 @@
+{
+  "branches": [
+    "main",
+    {
+      "name": "dev",
+      "prerelease": true
+    }
+  ],
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+        "releaseRules": [
+          { "type": "update", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "build", "scope": "Needs bump", "release": "patch" }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "presetConfig": {
+          "types": [
+            { type: "update", section: "Updates", hidden: false },
+            { type: "refactor", section: "Updates", hidden: false },
+          ]
+        }
+      }
+    ],
+    "@semantic-release/changelog",
+    "gradle-semantic-release-plugin",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "gradle.properties"
+        ]
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "app/build/outputs/apk/release/revanced-integrations*"
+          }
+        ],
+        successComment: false
+      }
+    ],
+    [
+      "@saithodev/semantic-release-backmerge",
+      {
+        backmergeBranches: [{"from": "main", "to": "dev"}],
+        clearWorkspace: true
+      }
+    ]
+  ]
+}
