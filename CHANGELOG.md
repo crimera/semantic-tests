@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/crimera/semantic-tests/compare/v1.1.0...v1.2.0) (2024-04-08)
+
+
+### Features
+
+* **Test:** Update .releaserc ([101f0a5](https://github.com/crimera/semantic-tests/commit/101f0a5d5d3e7a07f5b0fc652f6a30aa30262e96))
+
 ## [1.1.0](https://github.com/crimera/semantic-tests/compare/v1.0.5...v1.1.0) (2024-04-08)
 
 ## [1.0.5](https://github.com/crimera/semantic-tests/compare/v1.0.4...v1.0.5) (2024-04-08)
