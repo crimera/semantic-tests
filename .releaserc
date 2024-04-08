@@ -21,8 +21,8 @@
         "preset": "angular",
         "presetConfig": {
           "types": [
-            { type: "update", section: "Updates", hidden: false },
-            { type: "refactor", section: "Updates", hidden: false },
+            { type: "update", section: "Refactor", hidden: false },
+            { type: "refactor", section: "Refactor", hidden: false },
           ]
         }
       }
