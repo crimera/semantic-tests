@@ -9,8 +9,10 @@
   "plugins": [
     ["@semantic-release/commit-analyzer", {
         "releaseRules": [
+          { "type": "feat", "release": "minor" },
           { "type": "update", "release": "patch" },
           { "type": "refactor", "release": "patch" },
+          { "type": "fix", "release": "patch" },
           { "type": "build", "scope": "Needs bump", "release": "patch" }
         ]
       }
@@ -21,6 +23,8 @@
         "preset": "conventionalcommits",
         "presetConfig": {
           "types": [
+            { type: "fix", section: "Features", hidden: false },
+            { type: "feat", section: "Features", hidden: false },
             { type: "update", section: "Refactor", hidden: false },
             { type: "refactor", section: "Refactor", hidden: false },
           ]
