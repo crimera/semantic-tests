@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/crimera/semantic-tests/compare/v1.2.1...v1.3.0) (2024-04-08)
+
+
+### Features
+
+* **bug:** Add bug fixes ([30bb165](https://github.com/crimera/semantic-tests/commit/30bb165f79728d5a962ac83fa0fc9daf99142056))
+
 ## [1.2.1](https://github.com/crimera/semantic-tests/compare/v1.2.0...v1.2.1) (2024-04-08)
 
 
