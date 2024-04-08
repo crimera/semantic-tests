@@ -1,3 +1,5 @@
+## [1.1.0](https://github.com/crimera/semantic-tests/compare/v1.0.5...v1.1.0) (2024-04-08)
+
 ## [1.0.5](https://github.com/crimera/semantic-tests/compare/v1.0.4...v1.0.5) (2024-04-08)
 
 
