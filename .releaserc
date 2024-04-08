@@ -27,7 +27,6 @@
       }
     ],
     "@semantic-release/changelog",
-    "gradle-semantic-release-plugin",
     [
       "@semantic-release/git",
       {
