@@ -18,6 +18,7 @@
     [
       "@semantic-release/release-notes-generator",
       {
+        "preset": "angular",
         "presetConfig": {
           "types": [
             { type: "update", section: "Updates", hidden: false },
